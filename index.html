@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/assets/styles/styles.css">
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="container">
+
+            <h1 class="title">Генератор мемов</h1>
+            <canvas class="canvas"></canvas>
+            <input type="file" class="upload" placeholder="Выберите изображение для загрузки">
+            <form class="add-text">
+                <input type="text" class="text" placeholder="Введите текст...">
+                <div class="options">
+                    <div class="option-decorator">
+                        <input type="number" class="fz-option" placeholder="Размер шрифта">
+                        <span class="notation">Размер шрифта</span>
+                    </div>
+                    <div class="option-decorator">
+                        <select name="fs" id="" class="fs-family">
+                            <option name="fs" value="Arial">Arial</option>
+                            <option name="fs" value="Times New Roman">Times New Roman</option>
+                            <option name="fs" value="Courier">Courier</option>
+                        </select>
+                        <span class="notation">Шрифт</span>
+                    </div>
+                    <div class="option-decorator">
+                        <select name="color" id="textColor">
+                            <option name="color" value="white">Белый</option>
+                            <option name="color" value="black">Чёрный</option>
+                            <option name="color" value="red">Красный</option>
+                            <option name="color" value="blue">Синий</option>
+                            <option name="color" value="green">Зеленый</option>
+                        </select>
+                        <span class="notation">Цвет заливки</span>
+                    </div>
+                    <div class="option-decorator">
+                        <select name="border-color" id="borderColor">
+                            <option name="border-color" value="black">Чёрный</option>
+                            <option name="border-color" value="white">Белый</option>
+                            <option name="border-color" value="red">Красный</option>
+                            <option name="border-color" value="blue">Синий</option>
+                            <option name="border-color" value="green">Зеленый</option>
+                        </select>
+                        <span class="notation">Цвет обводки</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="form-submit">Добавить текст</button>
+                    <button class="download none">Сохранить</button>
+                    <button class="clear none">Очистить текст</button>
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</body>
+<script src="./src/js/index.js" type="module"></script>
+
+</html>
